@@ -1,0 +1,6 @@
+cond56=>condition: if (x <= y)
+sub60=>subroutine: print(x, y)
+sub64=>subroutine: print(y, x)
+
+cond56(yes)->sub60
+cond56(no)->sub64

@@ -1,0 +1,9 @@
+cond3=>condition: if (x <= y)
+sub7=>subroutine: print(x, y)
+cond13=>condition: if (y < x)
+sub17=>subroutine: print(y, x)
+
+cond3(yes)->sub7
+cond3(no)->cond13
+sub7(right)->cond13
+cond13(yes)->sub17

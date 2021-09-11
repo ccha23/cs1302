@@ -1,0 +1,22 @@
+cond70=>condition: if (x <= y <= z)
+sub74=>subroutine: print(x, y, z)
+cond79=>condition: if (x <= z <= y)
+sub83=>subroutine: print(x, z, y)
+cond88=>condition: if (y <= x <= z)
+sub92=>subroutine: print(y, x, z)
+cond97=>condition: if (y <= z <= x)
+sub101=>subroutine: print(y, z, x)
+cond106=>condition: if (z <= x <= y)
+sub110=>subroutine: print(z, x, y)
+sub114=>subroutine: print(z, y, x)
+
+cond70(yes)->sub74
+cond70(no)->cond79
+cond79(yes)->sub83
+cond79(no)->cond88
+cond88(yes)->sub92
+cond88(no)->cond97
+cond97(yes)->sub101
+cond97(no)->cond106
+cond106(yes)->sub110
+cond106(no)->sub114
