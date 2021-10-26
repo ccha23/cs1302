@@ -39,8 +39,8 @@ def print_function_call(f):
         The decorated function that also prints the function call
         when called.
 
-    Examples:
-    ---------
+    Examples
+    --------
     >>> @print_function_call
     ... def fibonacci(n):
     ...     return fibonacci(n - 1) + fibonacci(n - 2) if n > 1 else 1 if n == 1 else 0
@@ -88,19 +88,19 @@ def print_function_call(f):
 def caching(f):
     """Cache the return value of a function that takes a single argument.
 
-    Parameters:
-    -----------
+    Parameters
+    ----------
     f: Callable
         A function that takes a single argument.
 
-    Returns:
-    --------
+    Returns
+    -------
     Callable:
         The function same as f but has its return valued automatically cached
         when called. It has a method clear_cache to clear its cache.
 
-    Examples:
-    ---------
+    Examples
+    --------
     >>> @print_function_call
     ... @caching
     ... def fibonacci(n):
